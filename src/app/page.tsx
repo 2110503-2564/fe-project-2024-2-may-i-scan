@@ -43,22 +43,22 @@ export default function Home() {
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
-                Thai Massage
+                Full Body
             </button>
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
-                Aromatherapy Massage
+                Neck & Shoulders
             </button>
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
-                Hot Stone Massage
+                Arms & Hands
             </button>
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
-                Serenity Spa
+                Back
             </button>
         </div>
         <MassageCatalog massageJson={massage}/>
