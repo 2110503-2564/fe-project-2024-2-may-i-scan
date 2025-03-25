@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Banner from "@/components/Banner";
+import Link from "next/link";
 // import Card from "@/components/Card";
 import MassageCatalog from "@/components/MassageCatalog";
 import getMassageShops from "@/libs/getMassageShops";
@@ -14,26 +15,34 @@ export default function Home() {
         <div className="bg-slate-100 rounded-lg px-10 py-5 space-y-5 flex flex-col m-10">
         <h3 className='text-4xl font-medium text-blue-800'>Popular Massage Types</h3>
         <div>
+        <Link href="/massage/67dd4acbff5e27d982070fa9">
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
                 Thai Massage
             </button>
+            </Link>
+            <Link href="/massage/67dd4a99ff5e27d982070fa3">
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
                 Aromatherapy Massage
             </button>
+            </Link>
+            <Link href="/massage/67dd4ab3ff5e27d982070fa6">
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
                 Hot Stone Massage
             </button>
+            </Link>
+            <Link href="/massage/67dd4af6ff5e27d982070fac">
             <button className='bg-white text-blue-800 border border-blue-800
                 font-semibold py-2 px-2 m-2 rounded z-30
                 hover:bg-blue-800 hover:text-white hover:border-transparent'> 
                 Serenity Spa
             </button>
+            </Link>
         </div>
         <MassageCatalog massageJson={massage}/>
         </div>
